@@ -1,0 +1,21 @@
+{
+  "name": "playwright-ts-training",
+  "version": "1.0.0",
+  "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30",
+    "allure-commandline": "^2.27.0",
+    "allure-playwright": "^2.15.0",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "playwright": "^1.42.1"
+  }
+}

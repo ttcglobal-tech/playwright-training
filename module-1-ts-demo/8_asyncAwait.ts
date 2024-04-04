@@ -1,5 +1,7 @@
 // Simulated asynchronous function to fetch user data from an API​
 
+//The function returns a Promise that resolves to an object with properties id of type 
+//number and name of type string
 const fetchUserData = (): Promise<{ id: number; name: string }> => {
   return new Promise((resolve) => {
     // Simulate API call with setTimeout​

@@ -1,4 +1,4 @@
-// import { Animal, Dog } from "./iAnimal";
+// import { Animal, Dog } from "./6_iAnimal";
 
 // const myAnimal = new Animal("Charlie", 6, "Tiger");
 

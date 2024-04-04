@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 
 
 
-test('Login a user with invalid credentials @regex', async ({ page }) => {
+test('Login a user with invalid credentials @emulation', async ({ page }) => {
 
     await page.goto('https://www.saucedemo.com/');
     await page.waitForLoadState();
@@ -20,4 +20,4 @@ test('Login a user with invalid credentials @regex', async ({ page }) => {
 
 })
 
-//npx playwright test --project=chromium -g "regex" --headed
+//npx playwright test --project="Mobile Safari" -g "emulation" --headed

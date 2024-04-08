@@ -7,7 +7,7 @@ test('gets the json from api and adds a new fruit', async ({ page }) => {
 
         const response = await route.fetch();
         const json = await response.json();
-        json.push({ name: 'Loquat', id: 100 });
+        json.push({ name: 'Alatiris', id: 100 });
 
         // Fulfill using the original response, while patching the response body
         // with the given JSON object.
@@ -19,6 +19,6 @@ test('gets the json from api and adds a new fruit', async ({ page }) => {
     await page.goto('https://demo.playwright.dev/api-mocking');
 
     // Assert that the new fruit is visible
-    await expect(page.getByText('Loquat', { exact: true })).toBeVisible();
+    await expect(page.getByText('Alatiris', { exact: true })).toBeVisible();
 
 });

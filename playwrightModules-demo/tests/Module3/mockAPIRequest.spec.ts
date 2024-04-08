@@ -5,7 +5,7 @@ test("mocks a fruit and doesn't call api", async ({ page }) => {
 
     // Mock the api call before navigating
     await page.route('*/**/api/v1/fruits', async route => {
-        const json = [{ name: 'Strawberry', id: 21 }];
+        const json = [{ name: 'Durian', id: 21 }];
         await route.fulfill({ json });
     });
 
@@ -13,6 +13,6 @@ test("mocks a fruit and doesn't call api", async ({ page }) => {
     await page.goto('https://demo.playwright.dev/api-mocking');
 
     // Assert that the Strawberry fruit is visible
-    await expect(page.getByText('Strawberry')).toBeVisible();
+    await expect(page.getByText('Durian')).toBeVisible();
 
 });

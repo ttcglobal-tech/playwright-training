@@ -59,28 +59,28 @@ const defaultConfig : PlaywrightTestConfig = {
   /* Configure projects for major browsers */
   projects: [
     // Global setup and teardown
-    // {
-    //   name: 'setup login',
-    //   testMatch: 'global.setup.ts',
-    //   teardown: 'teardown logout'
-    // },
+    {
+      name: 'setup login',
+      testMatch: 'global.setup.ts',
+      teardown: 'teardown logout'
+    },
 
-    // {
-    //   name: 'teardown logout',
-    //   testMatch: 'global.teardown.ts'
-    // },
+    {
+      name: 'teardown logout',
+      testMatch: 'global.teardown.ts'
+    },
 
-    // Module 3 - Session storage as setup
-    // {
-    //   name: 'setup login',
-    //   testMatch: 'sessionStorage.setup.ts',
-    // },
+    //Module 3 - Session storage as setup
+    {
+      name: 'session setup login',
+      testMatch: 'sessionStorage.setup.ts',
+    },
 
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
       // Module 3 - Session storage dependency
-      //  dependencies: ['setup login']
+       dependencies: ['session setup login']
     },
 
     // {

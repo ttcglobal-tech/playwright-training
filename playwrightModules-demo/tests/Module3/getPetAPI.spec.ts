@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 
 test('Get a pet using get method', async ({ request }) => {
 
-    const getResponse = await request.get('https://petstore.swagger.io/v2/pet/3', {});
+    const getResponse = await request.get('https://petstore.swagger.io/v2/pet/24', {});
 
     const jsonResponseBody = JSON.stringify(await getResponse.json());
 
@@ -19,6 +19,6 @@ test('Get a pet using get method', async ({ request }) => {
     const parsedJson = JSON.parse(jsonResponseBody)
     const petName = parsedJson.tags[0].name;
     console.log("Parsed JSON == " + parsedJson.tags[0].name)
-    await expect(petName).toEqual('cat')
+    await expect(petName).toEqual('hellfire')
 
 })

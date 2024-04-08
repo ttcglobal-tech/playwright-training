@@ -1,0 +1,4 @@
+Post response body --> {"id":3,"category":{"id":3,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":3,"name":"cat"}],"status":"available"}
+Post response status code --> 200
+Post response status code --> true
+Parsed JSON == cat

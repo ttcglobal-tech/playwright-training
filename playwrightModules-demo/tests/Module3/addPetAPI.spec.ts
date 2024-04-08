@@ -7,19 +7,19 @@ test('Add a pet to pet store using post method', async ({ request }) => {
 
         data:
         {
-            "id": 3,
+            "id": 24,
             "category": {
-                "id": 3,
+                "id": 24,
                 "name": "string"
             },
-            "name": "doggie",
+            "name": "dragon",
             "photoUrls": [
                 "string"
             ],
             "tags": [
                 {
-                    "id": 3,
-                    "name": "cat"
+                    "id": 24,
+                    "name": "hellfire"
                 }
             ],
             "status": "available"

@@ -80,7 +80,7 @@ const defaultConfig : PlaywrightTestConfig = {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
       // Module 3 - Session storage dependency
-       dependencies: ['session setup login']
+      //  dependencies: ['session setup login']
     },
 
     // {

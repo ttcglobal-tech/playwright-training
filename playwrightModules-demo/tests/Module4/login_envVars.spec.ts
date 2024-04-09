@@ -1,8 +1,9 @@
 import { test, expect } from '@playwright/test';
-
+import config from '../../playwright.config';
 test('Login a user with valid credentials @env-vars', async ({ page }) => {
 
-    await page.goto('https://www.saucedemo.com/');
+
+    await page.goto(config.baseUrl);
     await page.waitForLoadState();
     //await page.pause();
 

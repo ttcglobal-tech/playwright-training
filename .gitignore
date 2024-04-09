@@ -6,3 +6,10 @@
 /allure-results/
 /allure-report/
 playwrightModules-demo/node_modules/
+module-1-ts-demo/node_modules/
+playwrightModules-demo/test-results/
+playwrightModules-demo/playwright-report/
+playwrightModules-demo/blob-report/
+playwrightModules-demo/playwright/.cache/
+playwrightModules-demo/allure-results/
+playwrightModules-demo/allure-report/

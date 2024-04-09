@@ -37,7 +37,29 @@ const defaultConfig : PlaywrightTestConfig = {
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   /*Module 4 reporters*/
-  reporter: [['line'],['html'], ["allure-playwright"]],
+  reporter: [
+    ['line'],
+    ['html'], 
+    ["allure-playwright",
+      {
+        categories: [
+          {
+            "name": "Ignored tests",
+            "matchedStatuses": ["skipped"]
+          },
+          {
+            "name": "Passed",
+            "matchedStatuses": ["passed"]
+          }
+        ],
+        environmentInfo: {
+          framework: "playwright",
+          os_platform: "windows",
+          node_version: "21.7.1"
+        }
+      } 
+    ]
+  ],
   
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
